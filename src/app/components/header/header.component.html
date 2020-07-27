@@ -1,0 +1,61 @@
+  <mat-toolbar class="navbar">
+    <button  mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+    <mat-selection-list [multiple]="false">
+      <mat-list-option [routerLink]="['home']">
+        Inicio
+      </mat-list-option>
+      <mat-divider></mat-divider>
+      <mat-list-option [routerLink]="['projects']">
+        Proyectos
+      </mat-list-option>
+      <mat-divider></mat-divider>
+      <mat-list-option [routerLink]="['technologies']">
+        Tecnologías
+      </mat-list-option>
+      <mat-divider></mat-divider>
+      <mat-list-option [routerLink]="['contact']">
+        Contacto
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-menu>
+
+    <span [routerLink]="['home']">Agatha Sáez</span>
+  </mat-toolbar>
+
+<!--   <mat-drawer-container class="example-container" autosize>
+    <button  mat-icon-button aria-label="menu" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-selection-list [multiple]="false">
+        <mat-list-option [routerLink]="['home']">
+          Inicio
+        </mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [routerLink]="['projects']">
+          Proyectos
+        </mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [routerLink]="['technologies']">
+          Tecnologías
+        </mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [routerLink]="['contact']">
+          Contacto
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+
+  </mat-drawer-container>
+ -->
